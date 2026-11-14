@@ -1,4 +1,4 @@
-2.algorithms/activity.h
+algorithms/activity.h
 
 #ifndef ACTIVITY_H
 #define ACTIVITY_H
