@@ -1,6 +1,3 @@
-4.algorithms/knapsack01.h
-
-
 #ifndef KNAPSACK01_H
 #define KNAPSACK01_H
 
