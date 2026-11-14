@@ -1,4 +1,4 @@
-3.algorithms/fractional.h
+algorithms/fractional.h
 
 #ifndef FRACTIONAL_H
 #define FRACTIONAL_H
