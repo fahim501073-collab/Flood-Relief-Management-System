@@ -1,6 +1,3 @@
-5.algorithms/coin_change.h
-
-
 
 #ifndef COIN_CHANGE_H
 #define COIN_CHANGE_H
