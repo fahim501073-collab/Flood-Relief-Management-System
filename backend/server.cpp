@@ -99,6 +99,12 @@ int main() {
         );
     });
 
+    CROW_ROUTE(app, "/api/supplies")([] {
+        return jsonResponse(
+            readJson(std::string(PROJECT_DATA_DIR) + "/supplies.json")
+        );
+    });
+
     CROW_ROUTE(app, "/api/priority")
         .methods(crow::HTTPMethod::Post)
     ([](const crow::request& req) {
