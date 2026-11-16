@@ -82,9 +82,8 @@ Flood-Relief-Management-System/
 
 ## How to Run
 
-The project will use CMake to build the C++ Crow backend.
-
-Build and execution instructions will be added after backend configuration is completed.
+cmake -S . -B build
+cmake --build build
 
 ## Team Members
 
