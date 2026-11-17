@@ -1,30 +1,14 @@
-{
-  "vertices": 4,
-  "roads": [
-    {
-      "from": 0,
-      "to": 1,
-      "distance": 10
-    },
-    {
-      "from": 0,
-      "to": 2,
-      "distance": 15
-    },
-    {
-      "from": 1,
-      "to": 2,
-      "distance": 5
-    },
-    {
-      "from": 1,
-      "to": 3,
-      "distance": 20
-    },
-    {
-      "from": 2,
-      "to": 3,
-      "distance": 10
-    }
-  ]
-}
+
+Source,Destination,Distance(km)
+Central Relief Hub,Chattogram District HQ,240
+Chattogram District HQ,Anwara Upazila HQ,28
+Anwara Upazila HQ,Bairag Union - Anwara - Chattogram,8
+Central Relief Hub,Feni District HQ,170
+Feni District HQ,Feni Sadar Upazila HQ,4
+Feni Sadar Upazila HQ,Dhalia Union - Feni Sadar - Feni,12
+Central Relief Hub,Cumilla District HQ,190
+Cumilla District HQ,Nangalkot Upazila HQ,40
+Nangalkot Upazila HQ,Dhalua Union - Nangalkot - Cumilla,6
+Central Relief Hub,Noakhali District HQ,210
+Noakhali District HQ,Subarnachar Upazila HQ,35
+Subarnachar Upazila HQ,Char Jabbar Union - Subarnachar - Noakhali,10

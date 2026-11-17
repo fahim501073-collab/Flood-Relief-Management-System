@@ -1,26 +1,6 @@
-[
-  {
-    "id": 0,
-    "name": "Cumilla",
-    "affectedPeople": 500,
-    "urgency": 3
-  },
-  {
-    "id": 1,
-    "name": "Sylhet",
-    "affectedPeople": 1000,
-    "urgency": 5
-  },
-  {
-    "id": 2,
-    "name": "Dhaka",
-    "affectedPeople": 800,
-    "urgency": 4
-  },
-  {
-    "id": 3,
-    "name": "Chittagong",
-    "affectedPeople": 1200,
-    "urgency": 5
-  }
-]
+
+Union,Upazila,District,Affected People,Priority Level
+Bairag Union,Anwara,Chattogram,6500,4
+Dhalia Union,Feni Sadar,Feni,8500,4
+Dhalua Union,Nangalkot,Cumilla,14500,5
+Char Jabbar Union,Subarnachar,Noakhali,18000,5

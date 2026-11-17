@@ -1,26 +1,9 @@
-[
-  {
-    "name": "Rice",
-    "weight": 10,
-    "value": 500,
-    "quantity": 100
-  },
-  {
-    "name": "Drinking Water",
-    "weight": 5,
-    "value": 300,
-    "quantity": 200
-  },
-  {
-    "name": "Medicine",
-    "weight": 2,
-    "value": 800,
-    "quantity": 50
-  },
-  {
-    "name": "Dry Food",
-    "weight": 4,
-    "value": 400,
-    "quantity": 150
-  }
-]
+
+Item Name,Weight(kg),Value
+Rice Sacks,20,100
+Water Bottles,15,80
+Medicine Kits,5,150
+Tents,40,200
+Dry Food Packets,10,70
+Baby Food,8,90
+Blankets,12,60
