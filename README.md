@@ -1,89 +1,158 @@
+# 🌊 Flood Relief Management System
 
-# Flood Relief Management System
+A C++ based terminal application designed to demonstrate how different Data Structures and Algorithms can support flood relief planning and resource management.
 
-## Project Description
+The system uses sample data from affected areas in **Chattogram, Feni, Cumilla, and Noakhali, Bangladesh**.
 
-Flood Relief Management System is a C++ based
-project designed to support the management and
-distribution of relief resources in flood-affected areas.
+## 📌 Project Overview
 
-The system uses different algorithms to prioritize
-affected areas, optimize resource allocation,
-manage relief activities, and analyze transportation
-routes.
+During flood emergencies, proper planning is important for distributing relief resources efficiently.
 
-## Objectives
+The Flood Relief Management System demonstrates how algorithms can help with:
 
-- Prioritize flood-affected areas based on urgency.
-- Analyze connectivity between affected areas.
-- Find shortest routes between connected areas.
-- Schedule relief distribution activities.
-- Allocate relief supplies efficiently.
-- Calculate suitable voucher denominations.
+- Identifying affected areas and their population.
+- Prioritizing areas for relief distribution.
+- Finding the shortest relief transportation routes.
+- Scheduling relief activities without time conflicts.
+- Optimizing relief resources within limited truck capacity.
+- Generating relief kits and calculating package combinations.
 
-## Algorithms Used
+**Current Version:** C++ Terminal Application
 
-1. Priority Queue – Prioritizing flood-affected areas.
-2. Graph (Dijkstra's Algorithm) – Finding shortest routes.
-3. Activity Selection – Scheduling relief activities.
-4. Fractional Knapsack – Allocating divisible relief supplies.
-5. 0/1 Knapsack – Selecting indivisible relief items.
-6. Coin Change – Calculating voucher denominations.
+## ✨ Features
 
-## Technologies Used
+The system provides six main features:
 
-- C++ (Core Programming Language)
-- Crow Framework (Backend)
-- HTML (Frontend Structure)
-- CSS (Frontend Design)
-- JavaScript (Frontend Interaction)
-- JSON (Data Exchange)
-- CMake (Build System)
-- Git & GitHub (Version Control)
+### 1\. View Affected Areas
 
-## Main Features
+Displays affected unions, their upazilas, districts, affected population, and priority levels.
 
-- Flood-affected area prioritization.
-- Area connectivity and route analysis.
-- Relief activity scheduling.
-- Efficient relief supply allocation.
-- Voucher denomination calculation.
-- Web-based user interface.
+### 2\. Prioritize Relief Distribution
 
-## Project Structure
+Uses a **Priority Queue** to rank affected areas based on urgency and the number of affected people.
 
-```text
+### 3\. Find Shortest Relief Route
+
+Uses **Dijkstra's Algorithm** to calculate the shortest distance from the Central Relief Hub to affected areas.
+
+### 4\. Select Relief Activities
+
+Uses **Sorting and Greedy Activity Selection** to select the maximum number of non-overlapping relief activities.
+
+### 5\. Optimize Relief Resources
+
+Uses the **Fractional Knapsack Algorithm** to maximize total resource value within a limited truck capacity.
+
+### 6\. Generate Relief Kit
+
+Uses two algorithms:
+
+- **0/1 Knapsack:** Selects the best combination of indivisible relief items within the truck capacity.
+- **Coin Change:** Calculates the minimum number of standard food packages required to meet a target quantity.
+
+## 🧠 Algorithms Used
+
+| Algorithm | Purpose |
+| --- | --- |
+| Priority Queue | Relief distribution prioritization |
+| Dijkstra's Algorithm | Shortest route calculation |
+| Sorting | Ordering relief activities |
+| Greedy Activity Selection | Selecting non-overlapping activities |
+| Fractional Knapsack | Resource optimization |
+| 0/1 Knapsack | Relief kit selection |
+| Coin Change | Minimum package combination |
+
+## 🛠️ Technologies Used
+
+- C++
+- Standard Template Library (STL)
+- File Handling
+- CSV Data Processing
+- Data Structures and Algorithms
+- Git and GitHub
+
+## 📂 Project Structure
+
+``` text
 Flood-Relief-Management-System/
-├── CMakeLists.txt
-├── README.md
-├── .gitignore
+│
+├── algorithms/
+│   ├── activity.h
+│   ├── coin_change.h
+│   ├── fractional.h
+│   ├── graph.h
+│   ├── knapsack01.h
+│   └── priority.h
+│
+├── data/
+│   ├── activities.csv
+│   ├── areas.csv
+│   ├── items.csv
+│   └── roads.csv
+│
 ├── include/
 │   └── common.h
-├── algorithms/
-│   ├── priority.h
-│   ├── graph.h
-│   ├── activity.h
-│   ├── fractional.h
-│   ├── knapsack01.h
-│   └── coin_change.h
-├── backend/
-│   └── server.cpp
-├── frontend/
-│   ├── index.html
-│   ├── css/
-│   │   └── style.css
-│   └── js/
-│       └── script.js
-└── data/
-    ├── areas.json
-    ├── roads.json
-    └── supplies.json
+│
+├── main.cpp
+├── CMakeLists.txt
+└── README.md
 ```
 
-## How to Run
+## ⚙️ How to Run
 
-cmake -S . -B build
-cmake --build build
+### Requirements
+
+- A C++ compiler supporting C++17 or later.
+- Git (optional).
+
+### Compile
+
+Open the project folder in the terminal and run:
+
+``` bash
+g++ -std=c++17 -Wall -Wextra main.cpp -o FloodRelief.exe
+```
+
+### Run
+
+On Windows Git Bash:
+
+``` bash
+./FloodRelief.exe
+```
+
+## 🗺️ Sample Data
+
+The project currently uses CSV files for demonstration:
+
+- `areas.csv` — affected areas and population information.
+- `roads.csv` — road connections and distances.
+- `items.csv` — relief items, weights, and values.
+- `activities.csv` — relief activities and their time slots.
+
+**Note:** The current dataset is illustrative sample data, not live disaster-management or real-time road information.
+
+## 🚀 Future Plans
+
+The following improvements are planned for future versions:
+
+- **Web-Based Interface:** Develop a user-friendly website using HTML, CSS, and JavaScript.
+- **Database Integration:** Replace static CSV files with a database for better data management.
+- **Interactive Map:** Display affected areas and relief routes on an interactive map.
+- **Real-Time Data:** Integrate updated flood information, affected population data, and road conditions from reliable sources.
+- **Resource Stock Management:** Track available relief items and warehouse inventory.
+- **User Authentication:** Introduce separate access for administrators and relief volunteers.
+- **Improved Reporting:** Generate detailed relief distribution and resource management reports.
+
+## 🎯 Project Objective
+
+The main objective of this project is to apply fundamental Data Structures and Algorithms to a practical problem scenario and demonstrate how computational techniques can support efficient flood relief planning.
+
+## 👨‍💻 Development
+
+This project is developed as an academic C++ project with a focus on Data Structures and Algorithms.
+
+**Current Status:** Terminal-based version completed. Future enhancements are planned.
 
 ## Team Members
 
@@ -97,6 +166,3 @@ cmake --build build
 - Department: Computer Science and Engineering
 - University: Metropolitan University
 
-## Academic Note
-
-This project is developed for academic purposes. It demonstrates the practical application of algorithm design and analysis in a simulated flood relief management scenario.
